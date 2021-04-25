@@ -3,7 +3,12 @@ node_modules
 /dist
 /example
 /packages
-yarn.lock
+/public
+.browserslistrc
+.eslintrc.js
+.gitignore
+babel.config.js
+vue.config.js
 
 # local env files
 .env.local
