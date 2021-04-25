@@ -11,7 +11,7 @@ module.exports = {
     resolve: {
       extensions: [".js", ".vue", ".json"],
       alias: {
-        "vue-rws": resolve("packages"),
+        "vue-rws": resolve("src/packages"),
       },
     },
     output: { libraryExport: "default" },

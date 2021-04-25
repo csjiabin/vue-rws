@@ -4,9 +4,7 @@ export default class EventEmitter {
   constructor(vuex = {}) {
     Logger.info(vuex ? `Vuex adapter enabled` : `Vuex adapter disabled`);
     Logger.info(
-      vuex.mutationPrefix
-        ? `Vuex socket mutations enabled`
-        : `Vuex socket mutations disabled`
+      `Vuex socket mutations ${vuex.mutationPrefix ? "enabled" : "disabled"}`
     );
     Logger.info(
       vuex ? `Vuex socket actions enabled` : `Vuex socket actions disabled`

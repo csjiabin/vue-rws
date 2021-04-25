@@ -3,7 +3,7 @@ import Logger from "./logger";
 import Mixin from "./mixin";
 import Emitter from "./emitter";
 import Listener from "./listener";
-import pack from "../package.json";
+import pack from "../../package.json";
 class VueRws {
   constructor({ connection, vuex, debug, options }) {
     // 获取版本号
@@ -40,7 +40,7 @@ class VueRws {
 
     Vue.mixin(Mixin);
     Logger.info(`Vue-RWS version v${pack.version}`);
-    Logger.info("Vue-Rws plugin enabled");
+    Logger.info("Vue-RWS plugin enabled");
   }
 
   /**
