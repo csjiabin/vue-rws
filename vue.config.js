@@ -4,13 +4,6 @@ function resolve(dir) {
 }
 module.exports = {
   productionSourceMap: false,
-  pages: {
-    index: {
-      entry: "example/main.js",
-      template: "public/index.html",
-      filename: "index.html",
-    },
-  },
   css: {
     extract: false,
   },

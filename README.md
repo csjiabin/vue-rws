@@ -80,6 +80,7 @@ new Vue({
 | vuex.store          | Vuex                          | `null`      | Optional     | Vuex store instance                                     |
 | vuex.actionPrefix   | String                        | `null`      | Optional     | Prefix for emitting server side vuex actions            |
 | vuex.mutationPrefix | String                        | `null`      | Optional     | Prefix for emitting server side vuex mutations          |
+| options             | Object                        | `null`      | Optional     | reconnecting-websocket options                          |
 
 #### 🌈 Component Level Usage
 
@@ -88,17 +89,17 @@ new Vue({
 ```javascript
 new Vue({
   sockets: {
-    connect: function () {
+    connect() {
       console.log("socket connected");
     },
-    customEmit: function (data) {
+    customEmit(data) {
       console.log(
         'this method was fired by the socket server. eg: rws.emit("customEmit", data)'
       );
     },
   },
   methods: {
-    clickButton: function (data) {
+    clickButton(data) {
       // $socket is socket.io-client instance
       this.$rws.emit("emit_method", data);
     },
