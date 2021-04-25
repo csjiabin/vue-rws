@@ -1,6 +1,6 @@
 {
   "name": "vue-rws",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "csjiabin <hjbmeow@163.com>",
   "private": false,
   "main": "lib/vue-rws.umd.min.js",
@@ -8,6 +8,7 @@
     "type": "git",
     "url": "https://github.com/csjiabin/vue-rws.git"
   },
+  "license": "MIT",
   "keywords": [
     "vue",
     "socket",
