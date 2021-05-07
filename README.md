@@ -1,3 +1,11 @@
+<p align="center">
+  <!-- <a href="https://circleci.com/gh/csjiabin/vue-rws/tree/main"><img src="https://img.shields.io/circleci/project/github/csjiabin/vue-rws/main.svg?sanitize=true" alt="Build Status"></a>
+  <a href="https://codecov.io/github/csjiabin/vue-rws?branch=main"><img src="https://img.shields.io/codecov/c/github/csjiabin/vue-rws/main.svg?sanitize=true" alt="Coverage Status"></a> -->
+  <a href="https://npmcharts.com/compare/vue-rws?minimal=true"><img src="https://img.shields.io/npm/dm/vue-rws.svg?sanitize=true" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/vue-rws"><img src="https://img.shields.io/npm/v/vue-rws.svg?sanitize=true" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/vue-rws"><img src="https://img.shields.io/npm/l/vue-rws.svg?sanitize=true" alt="License"></a>
+</p>
+
 #### 🚀 Installation
 
 ```bash
