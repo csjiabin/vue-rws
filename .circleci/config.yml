@@ -4,7 +4,7 @@ orbs:
   node: circleci/node@4.1
 
 jobs:
-  build-and-lib:
+  build-lib:
     docker:
       - image: cimg/node:15.1
     steps:
@@ -17,4 +17,4 @@ jobs:
 workflows:
   sample:
     jobs:
-      - build-and-lib
+      - build-lib
