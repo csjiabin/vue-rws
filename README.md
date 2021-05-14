@@ -188,6 +188,6 @@ export default new Vuex.Store({
 
 <p align="center">
     <a href="https://github.com/MetinSeylan/Vue-Socket.io" target="_blank">
-    <img src="https://media.giphy.com/media/11jlnltQgUi2mQ/giphy.gif" style="transform: rotateY(180deg)">
+    <img src="https://media.giphy.com/media/11jlnltQgUi2mQ/giphy.gif" style="transform: rotateY(180deg);">
     </a>
 </p>
