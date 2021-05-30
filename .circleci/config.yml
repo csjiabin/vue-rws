@@ -4,7 +4,7 @@ orbs:
   node: circleci/node@4.1
 
 jobs:
-  build-lib:
+  build:
     docker:
       - image: cimg/node:15.1
     steps:
@@ -13,8 +13,8 @@ jobs:
           pkg-manager: yarn
       - run:
           name: Run build
-          command: npm run lib
+          command: npm run build
 workflows:
   sample:
     jobs:
-      - build-lib
+      - build
