@@ -2,12 +2,10 @@
 node_modules
 /dist
 /src
-/public
-.browserslistrc
 .eslintrc.js
 .gitignore
-babel.config.js
-vue.config.js
+.babelrc
+rollup.config.js
 
 # local env files
 .env.local

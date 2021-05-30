@@ -3,7 +3,9 @@
   "version": "0.1.1",
   "author": "csjiabin <hjbmeow@163.com>",
   "private": false,
-  "main": "lib/vue-rws.umd.min.js",
+  "main": "lib/vue-rws.umd.js",
+  "module": "lib/vue-rws.esm.js",
+  "browser": "lib/vue-rws.umd.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/csjiabin/vue-rws.git"
@@ -19,37 +21,30 @@
   ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lib": "vue-cli-service build --target lib --name vue-rws --dest lib src/packages/index.js",
-    "lint": "vue-cli-service lint",
+    "build": "rollup -c",
     "codecov": "codecov"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "reconnecting-websocket": "^4.4.0",
-    "vue": "^2.6.11"
+    "reconnecting-websocket": "^4.4.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/eslint-config-prettier": "^6.0.0",
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-external-helpers": "^7.12.13",
+    "@babel/preset-env": "^7.14.4",
+    "@rollup/plugin-alias": "^3.1.2",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
     "babel-eslint": "^10.1.0",
+    "babel-preset-latest": "^6.24.1",
     "codecov": "^3.8.2",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-vue": "^6.2.2",
     "lint-staged": "^9.5.0",
     "prettier": "^2.2.1",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "rollup": "^2.50.4",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2"
   }
 }

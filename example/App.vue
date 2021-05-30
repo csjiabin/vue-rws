@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
     <h1>欢迎使用 VueRws</h1>
     <button @click="loginHandle">login</button>
   </div>
