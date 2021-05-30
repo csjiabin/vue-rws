@@ -3,11 +3,10 @@ import Logger from "./logger";
 import Mixin from "./mixin";
 import Emitter from "./emitter";
 import Listener from "./listener";
-import pack from "../package.json";
 class VueRws {
   constructor({ connection, vuex, debug, options }) {
     // 获取版本号
-    this.version = pack.version;
+    this.version = "__VERSION__";
     Logger.debug = debug;
     this._options = options || {
       // WebSocket: WS, // custom WebSocket constructor
@@ -32,14 +31,17 @@ class VueRws {
       Vue.config.globalProperties.$rws = this.rws;
       Vue.config.globalProperties.$ws = this.rws;
       Vue.config.globalProperties.$vueRws = this;
+      Mixin.onBeforeMount = Mixin.beforeCreate;
+      Mixin.onMounted = Mixin.mounted;
+      Vue.mixin(Mixin);
     } else {
       Vue.prototype.$rws = this.rws;
       Vue.prototype.$ws = this.rws;
       Vue.prototype.$vueRws = this;
+      Vue.mixin(Mixin);
     }
 
-    Vue.mixin(Mixin);
-    Logger.info(`Vue-RWS version v${pack.version}`);
+    Logger.info(`Vue-RWS version v${this.version}`);
     Logger.info("Vue-RWS plugin enabled");
   }
 

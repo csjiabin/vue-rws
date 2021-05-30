@@ -1,13 +1,5 @@
 {
-  "presets": [
-    [
-      "latest",
-      {
-        "es2015": {
-          "modules": false
-        }
-      }
-    ]
-  ],
-  "plugins": ["@babel/plugin-external-helpers"]
+  "presets": ["@babel/preset-env"],
+  // "plugins": ["@babel/plugin-external-helpers"],
+  "ignore": ["dist/*.js", "lib/*.js"]
 }
