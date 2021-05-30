@@ -187,7 +187,7 @@ export default new Vuex.Store({
 <!-- [![Stargazers over time](https://starcharts.herokuapp.com/MetinSeylan/Vue-Socket.io.svg)](https://starcharts.herokuapp.com/MetinSeylan/Vue-Socket.io) -->
 
 <p align="center">
-    <a href="https://github.com/MetinSeylan/Vue-Socket.io" target="_blank">
-    <img src="https://media.giphy.com/media/11jlnltQgUi2mQ/giphy.gif" style="transform: rotateY(180deg);">
+    <a href="https://github.com/csjiabin/vue-rws" target="_blank">
+    <img src="./assets/cat.gif">
     </a>
 </p>
