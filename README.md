@@ -186,6 +186,6 @@ export default new Vuex.Store({
 
 <p align="center">
     <a href="https://github.com/csjiabin/vue-rws" target="_blank">
-    <img src="./assets/cat.gif">
+    <img src="https://raw.githubusercontent.com/csjiabin/vue-rws/HEAD/assets/cat.gif">
     </a>
 </p>

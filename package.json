@@ -1,6 +1,6 @@
 {
   "name": "vue-rws",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "author": "csjiabin <hjbmeow@163.com>",
   "private": false,
   "main": "lib/vue-rws.umd.js",
