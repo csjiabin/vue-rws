@@ -1,6 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
-import VueRws from "../src";
+import VueRws from "../../lib/vue-rws.umd";
 Vue.use(
   new VueRws({
     debug: process.env.NODE_ENV == "development",
