@@ -22,7 +22,8 @@
   "scripts": {
     "dev": "rollup -w -c",
     "build": "rollup -c",
-    "codecov": "codecov"
+    "codecov": "codecov",
+    "lint": "eslint --fix ./"
   },
   "dependencies": {
     "reconnecting-websocket": "^4.4.0"
