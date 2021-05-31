@@ -6,9 +6,7 @@ export default class EventEmitter {
     Logger.info(
       `Vuex socket mutations ${vuex.mutationPrefix ? "enabled" : "disabled"}`
     );
-    Logger.info(
-      vuex ? `Vuex socket actions enabled` : `Vuex socket actions disabled`
-    );
+    Logger.info(`Vuex socket actions ${vuex ? "enabled" : "disabled"}`);
     this.store = vuex.store;
     this.actionPrefix = vuex.actionPrefix ? vuex.actionPrefix : "SOCKET_";
     this.mutationPrefix = vuex.mutationPrefix;
@@ -25,7 +23,6 @@ export default class EventEmitter {
     if (typeof callback === "function") {
       if (!this.listeners.has(event)) this.listeners.set(event, []);
       this.listeners.get(event).push({ callback, component });
-
       Logger.info(`#${event} subscribe, component: ${component.$options.name}`);
     } else {
       throw new Error(`callback must be a function`);
